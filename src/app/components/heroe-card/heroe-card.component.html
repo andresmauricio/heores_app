@@ -4,6 +4,6 @@
         <h5 class="card-title">{{heroe.nombre}}</h5>
         <p class="card-text">{{heroe.bio}}</p>
         <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
-        <button [routerLink]="['/detalle-heroe', index]" class="btn btn-warning">Ver más</button>
+        <button (click)="emitToIndexHero()" class="btn btn-warning">Ver más</button>
     </div>
 </div>
